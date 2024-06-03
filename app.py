@@ -8,7 +8,7 @@ Original file is located at
 """
 
 import streamlit as st
-from stellar_pipeline import Pipeline
+from mlpipeline import Pipeline
 import warnings
 warnings.filterwarnings('ignore')
 
@@ -23,7 +23,9 @@ st.markdown(
 col1, col2 = st.columns([1, 2])
 
 with col1:
+    # It can be any random value between 0 to 360. Doesn't contribute to model prediction.
     alpha = 150
+    # It can be any random value between 0 to 360. Doesn't contribute to model prediction.
     delta = 150
     u = st.slider(label='Ultraviolet', min_value=0.0,
                   max_value=30.0, value=22.0)
