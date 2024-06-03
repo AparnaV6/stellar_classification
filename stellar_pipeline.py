@@ -26,14 +26,14 @@ class Pipeline(object):
     self.df = pd.DataFrame(data=self.df, columns=self.features)
 
   def preprocessing(self):
-    with open(file='scaler.pkl', mode='rb') as scale:
+    with open(file='scaling.pkl', mode='rb') as scale:
       scaler = pickle.load(file=scale)
 
     self.df = scaler.transform(x=self.df)
     self.df = pd.DataFrame(data=self.df, columns=self.features)
 
   def prediction(self):
-    with open(file='classifier.pkl', mode='rb') as classify:
+    with open(file='stacking_classifier.pkl', mode='rb') as classify:
       classifier = pickle.load(file=classify)
 
     prob = classifier.predict_proba(x=self.df)
