@@ -78,8 +78,8 @@ class Pipeline(object):
         else:
             pred_class = 'Star'
 
-        c = "The class is '{}' with a confidence of {}%.".format(
-            pred_class, confidence)
+        c = "The class is '{}'.".format(
+            pred_class)
         return c, fig, pred_class
 
     def get_encoded_image(self, pred_class):
