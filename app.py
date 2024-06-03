@@ -8,7 +8,7 @@ Original file is located at
 """
 
 import streamlit as st
-from mlpipeline import Pipeline
+from stellar_pipeline import Pipeline
 import warnings
 warnings.filterwarnings('ignore')
 
