@@ -41,8 +41,8 @@ with col1:
 data = [[alpha, delta, u, g, r, i, z, redshift]]
 pipe = Pipeline(data=data)
 conclusion, fig, pred_class = pipe.pipeline()
-image_credits = "A random {} image taken from nasa.gov image gallery.".format(
-    pred_class.lower())
+# image_credits = "A random {} image taken from nasa.gov image gallery.".format(
+#     pred_class.lower())
 conclusion = "<p style='text-align: center;'>{}</p>".format(conclusion)
 image_credits = "<p style='text-align: center;'>{}</p>".format(image_credits)
 
