@@ -47,6 +47,6 @@ conclusion = "<p style='text-align: center;'>{}</p>".format(conclusion)
 # image_credits = "<p style='text-align: center;'>{}</p>".format(image_credits)
 
 with col2:
-    st.markdown(body=conclusion, unsafe_allow_html=True)
     st.plotly_chart(figure_or_data=fig, use_container_width=True)
+    st.markdown(body=conclusion, unsafe_allow_html=True)
     # st.markdown(body=image_credits, unsafe_allow_html=True)
